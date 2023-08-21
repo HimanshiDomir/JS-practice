@@ -25,6 +25,7 @@ function threeSum(nums, target) {
           const sum = nums[i] + nums[left] + nums[right];
           if (sum === target) {
               result.push([nums[i], nums[left], nums[right]]);
+             // return result; // will give only one result
               while (left < right && nums[left] === nums[left + 1]) left++;
               while (left < right && nums[right] === nums[right - 1]) right--;
               left++;
@@ -39,4 +40,4 @@ function threeSum(nums, target) {
   return result;
 }
 
-console.log(threeSum([0, 2, 2, 5, 15], 9));
+console.log(threeSum([0, 2, 2, 5, 15, 4], 9));

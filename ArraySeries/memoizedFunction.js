@@ -12,8 +12,10 @@ const memoize = (fn) => {
       return cache[n];
     }
     else {
-      console.log('Calculating result');
-      let result = fn(n);
+      console.log('Calculating result', args);
+      console.log('Calculating result', ...args);
+      console.log('Calculating result', arguments);
+      let result = fn(args);
       cache[n] = result;
       return result;
     }
@@ -21,7 +23,7 @@ const memoize = (fn) => {
 }
 // creating a memoized function for the 'add' pure function
 const memoizedAdd = memoize(add);
-console.log(memoizedAdd(3));  // calculated
-console.log(memoizedAdd(3));  // cached
-console.log(memoizedAdd(4));  // calculated
-console.log(memoizedAdd(4));  // cached
+console.log(memoizedAdd(3,4));  // calculated
+// console.log(memoizedAdd(3));  // cached
+// console.log(memoizedAdd(4));  // calculated
+// console.log(memoizedAdd(4));  // cached

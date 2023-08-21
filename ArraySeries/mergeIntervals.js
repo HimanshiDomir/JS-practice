@@ -14,6 +14,8 @@
     let pair = intervals[0]
     for(const interval of intervals) {
       if (interval[0] <= pair[1]) {
+        console.log('inside', interval)
+        console.log('inside', pair)
         pair[1] = Math.max(pair[1], interval[1])
       } else {
         result.push(pair)

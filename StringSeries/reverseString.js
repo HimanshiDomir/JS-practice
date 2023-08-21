@@ -1,7 +1,7 @@
 function reverseString(sentence, left, right) {
     if (!sentence || sentence.length < 2) return
     while (left < right) {
-        
+        console.log(left,right)
         let temp = sentence[left]
         sentence = sentence.substr(0, left) + sentence[right] + sentence.substr(left+1)
         console.log(sentence);
@@ -21,6 +21,7 @@ function reverseWords(sentence) {
     console.log(sentence);
     while (true) {
         while(sentence[left] === ' ') left++
+        console.log('left',left);
         if (left >= sentence.length) break
         right = left + 1
         while (right < sentence.length && sentence[right] != ' ') right++
