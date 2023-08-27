@@ -8,3 +8,5 @@ return output;
 }
 const c = {a:'him',b:{c:1}};
 console.log(deepCopy(c) == c);
+
+// splice and reverse works on orignal array

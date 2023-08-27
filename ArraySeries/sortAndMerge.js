@@ -6,7 +6,7 @@
 function mergeArray(arr1, arr2,
     n, m)
 {
-
+//sort
 // Now traverse the array1 and if
 // arr2 first element
 // is less than arr1 then swap

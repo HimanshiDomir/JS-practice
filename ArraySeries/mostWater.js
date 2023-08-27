@@ -2,7 +2,7 @@
  * @param {number[]} height
  * @return {number}
  * calculate min of l and r so that we can check how much max water it can hold
- * multiple the above result with the gap between l and r to get the total amount it can hold
+ * multiply the above result with the gap between l and r to get the total amount it can hold
  * find the maximum of above and max
  * if l is greater than r then decrement r, 
  * else if l is less than r then, increment l,

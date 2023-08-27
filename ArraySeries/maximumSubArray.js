@@ -1,7 +1,7 @@
 /**
  * @param {number[]} nums
  * @return {number[]}
- * take max as arr[0] and sum as o
+ * take max as arr[0] and sum as 0
  * iterate over the array and add that number to the sum
  * assign max the value of maximum from max and sum
  * if sum is less than 0 make it zero again

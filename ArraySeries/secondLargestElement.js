@@ -34,7 +34,7 @@
             }
         }
   
-        if (second == -2454635434){
+        if (second == -Infinity){
              
         console.log("There is no second largest element<br>");
         }

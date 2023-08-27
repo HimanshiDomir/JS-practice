@@ -34,8 +34,24 @@ function reverseWords(sentence) {
 let sentence = "I love javascript";
 console.log(sentence);
 console.log(reverseWords(sentence));
-
+// javascript love I
 /**
  * Time Complexity O(N)
  * Space Complexity O(1)
  */
+
+
+
+const str = "I love javascript";
+
+  function foo(str) {
+    if (str.length < 2) {
+      return str;
+    }
+
+    return foo(str.slice(1)) + str[0];
+  }
+
+  const result = foo(str);
+  console.log(result);
+  //tpircsavaj evol I
