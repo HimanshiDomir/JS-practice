@@ -219,6 +219,8 @@ the .target property of the event object.
 
 
         category.addEventListener('click', (e) => {
+            console.log(e.target)
+            console.log(e.currentTarget);
             const selectedValue = e.target.innerText;
             console.log("Common Parent Clicked", selectedValue);
             selectedCategory.innerText = "Selected Category : " + selectedValue

@@ -31,4 +31,4 @@
     console.log(nums.slice(start,end+1));
     return sm;
 };
-console.log(maximumSubArray([2,-1,-3,4,-1,2,1,-5,4]));
+console.log(maximumSubArray([2,-1,-3,5]));

@@ -21,3 +21,6 @@ const weeksInMonth = (year, month, fromMonday = false) => {
     return Math.ceil(days / 7);
 }
 console.log(weeksInMonth(2023,6, false)); // for july
+
+
+// splice and reverse overwrites orignal array

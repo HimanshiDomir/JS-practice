@@ -123,3 +123,45 @@ function promisePolyfillCode() {
     .catch(console.error);
     //"got results" [1000,5000,3000]
 
+
+
+
+
+
+    // await keyword will block next statement to run and move it in microstack queue
+    // but resolve() only goes in micrtotask
+    // any lines after resolves are run syncronously as Promise constructor is sync function
+    console.log("start");
+
+  let x = async() => {
+    console.log(1);
+    await  console.log(9);
+      await  console.log(10);
+    console.log(3);
+      return 1;
+  };
+
+  x().then((result) => {
+    console.log(result);
+  });
+
+  console.log("end");
+  
+  
+
+  console.log("start");
+ 
+
+  // ***************************************************
+
+  const promise = new Promise((resolve) => {
+    console.log(1);
+    resolve(2);
+    console.log(3);
+  });
+
+  promise.then((result) => {
+    console.log(result);
+  });
+
+  console.log("end");

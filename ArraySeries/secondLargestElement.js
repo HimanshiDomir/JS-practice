@@ -40,6 +40,7 @@
         }
         else{
             console.log("The second largest element is " + second);
+            console.log("The largest element is " + largest);
                 return;
             }
         }

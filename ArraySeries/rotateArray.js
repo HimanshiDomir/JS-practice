@@ -1,6 +1,7 @@
 
 //TC: O(n)
-// to handle cases where rotations is greater tha array length, we calculate modulo so that w eperform necessary no. of rotations
+// to handle cases where rotations is greater tha array length, we calculate modulo so that we perform 
+// necessary no. of rotations
 function rotateArray(array, rotations){
 rotations %= array.length;
 console.log(rotations);
