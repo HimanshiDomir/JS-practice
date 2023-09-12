@@ -5,6 +5,7 @@ function substring(str) {
     for (var i = 0; i < str.length; i++) {
         var substr = ''
         for (var j = i; j < str.length; j++) {
+            // str[j];
             substr += str.charAt(j);
             console.log(substr);
         }

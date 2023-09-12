@@ -24,10 +24,3 @@ function areRotations( str1,  str2)
             console.log("Strings are rotations of each other");
         else
             console.log("Strings are not rotations of each other");
-
-            var str1 = "AACD";
-        var str2 = "ADCA";
-            if (areRotations(str1, str2))
-            console.log("Strings are rotations of each other");
-        else
-            console.log("Strings are not rotations of each other");

@@ -7,9 +7,13 @@ const num = 5431;
       sum += rem;
       num = parseInt(num / 10);
     }
-    return sum > 9 ? addition(sum) : sum;
+    return sum;
   }
 
   const res = addition(num);
 
   console.log(res);
+
+
+
+  

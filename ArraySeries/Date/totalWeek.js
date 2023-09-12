@@ -23,4 +23,5 @@ const weeksInMonth = (year, month, fromMonday = false) => {
 console.log(weeksInMonth(2023,6, false)); // for july
 
 
-// splice and reverse overwrites orignal array
+// splice, sort and reverse overwrites orignal array
+// includes, indexOf and splice are on both array and string

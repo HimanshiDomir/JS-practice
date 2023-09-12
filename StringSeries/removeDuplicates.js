@@ -1,7 +1,7 @@
 function removeDup(str) {
     let set = new Set();
     let ans = "";
-    for(x of str){
+    for(x of str){ // x in str also works on string
       if(x === " ") {
         if(ans[ans.length-1] === " ") continue
         ans += " "

@@ -1,3 +1,26 @@
+getPlayerInfo = function (role, country) {
+  console.log(`${this.firstName} ${this.lastName}, ${role} from ${country}`);
+};
+
+// object 1
+const player1 = {
+  firstName: "Virat",
+  lastName: "Kohli",
+  age: 33,
+
+  // method of player 1
+  getAge: function () {
+    console.log(`${this.firstName}'s age is ${this.age}`);
+  },
+};
+
+// object 2
+const player2 = {
+  firstName: "Hardik",
+  lastName: "Pandya",
+  age: 28,
+};
+
 // ********************apply**********************
 Function.prototype.customApply = function (context, args = []) {
     if (!Array.isArray(args)) {

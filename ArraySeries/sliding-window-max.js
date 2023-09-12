@@ -35,7 +35,7 @@ const maxSlidingWindowNaive = function (nums, k) {
   // Optimised Solution - Deque
   // dequeue.shift() to remove from start when the window size is greater than k
   // dequeue.pop() to remove from end when the last element of dequeue is less than current element
-  // push in dequeue
+  // push in dequeue index
   // push in result when we get the max element out of 3
   const maxSlidingWindowQueue = function (nums, k) {
     const result = [];

@@ -14,6 +14,8 @@ const debounceFunc = (func, delay) => {
         clearTimeOut(timer);
         timer = setTimeOut(() => {
             func.apply(context, args);
+           // func(context, ...args);
+           // func.apply(context, arguments);
         }, delay)
     }
 }
@@ -26,9 +28,9 @@ const handlerTrigger = () => {
 const optimisedTriggerHandler = throttleFunc(handlerTrigger, 100);
 const throttleFunc = (func, interval) => {
     let shouldFire = true;
-    return function () {
+    return function (...args) {
         if (shouldFire) {
-            func();
+            func(...args);
             shouldFire = false;
             setTimeOut(() => {
                 shouldFire = true;

@@ -21,6 +21,7 @@ let employees = [
     }
 ];
 
+let a = [1,3,2,7,4,5]
 
 Array.prototype.sort = function(compareFn) {
    return mergeSort(this)
@@ -44,13 +45,11 @@ Array.prototype.sort = function(compareFn) {
         let indexLeft = 0
         let indexRight = 0
         while (indexLeft < left.length && indexRight < right.length) {
-            //compareFn ? compareFn =()=> left[indexLeft] < right[indexRight] : compareFn
             let _left = left[indexLeft]
             let _right = right[indexRight]
-            // if (compareFn)
-            // console.log(compareFn(left, right));
-            // compareFn = composeCompareFn(compareFn(left, right))
-            // compareFn = (l, r) => l < r
+            if(!compareFn) {
+                compareFn = (a,b) => a-b;
+            }
             if (composeCompareFn(compareFn(_left, _right))) {
                 result.push(left[indexLeft])
                 indexLeft++
@@ -70,5 +69,6 @@ Array.prototype.sort = function(compareFn) {
             return false
     }
 }
-
 console.log(employees.sort((a,b) => a.age-b.age));
+
+console.log(a.sort());

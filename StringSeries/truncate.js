@@ -9,3 +9,4 @@ const truncate = (str, end) => {
 
 console.log(truncate(test, 20));
 console.log(test)
+// padEnd takes length of resulting substring;
